@@ -1,0 +1,9 @@
+<ul>
+  <li>
+    <a routerLink="/" (click)="homePage()">Home</a>
+  </li>
+  <li>
+    <a routerLink="/student" (click)="studentsPage()">Student's page</a>
+  </li>  
+</ul>
+<div>Current store: {{navStore$ | async}}</div>

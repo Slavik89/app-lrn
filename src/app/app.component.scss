@@ -1,0 +1,30 @@
+.main-container {  
+  margin-top: 7px;
+  width: 1900px;
+  height: 800px;
+
+  app-side-nav {        
+  
+    ul>li {      
+      margin-bottom: 20px;           
+    }  
+  }  
+
+  .menu, .body {
+    border: 1px solid lightgrey;
+    border-radius: 3px;            
+    margin-left: 25px;
+    padding: 20px;
+  }
+  .menu {
+    width: 200px;    
+  }  
+  .body {
+    width: 1500px;
+    margin-left: 15px;
+  }
+}
+
+.toolbar {
+  width: 100%;  
+}

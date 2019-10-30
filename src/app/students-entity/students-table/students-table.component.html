@@ -1,0 +1,25 @@
+<div> 
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">№</th>
+        <th scope="col">Name</th>        
+        <th scope="col">Group</th>  
+        <th scope="col">Go to details</th>      
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let student of students let i=index">
+        <td scope="row">{{i+1}}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.id }}</td>        
+        <td>
+          <div>
+            <button (click)="onSelectStudent(i)">Info</button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary">Add student</button> 
+  </div>
